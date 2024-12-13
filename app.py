@@ -26,8 +26,8 @@ def load_data(url: str):
         "calls": [0],
         "minutes": [0],
         "callRecords": [pd.DataFrame([
-            {"callId": "orphan1", "direction": "outbound", "number": "1234567890", "duration": 0, "switchCode": "N/A"},
-            {"callId": "orphan2", "direction": "inbound", "number": "0987654321", "duration": 0, "switchCode": "N/A"}
+            {"callId": "na", "direction": "outbound", "number": "1234567890", "duration": 0, "switchCode": "N/A"},
+            {"callId": "na", "direction": "inbound", "number": "0987654321", "duration": 0, "switchCode": "N/A"}
         ])]
     }
     df = pd.concat([df, pd.DataFrame(orphaned_records)], ignore_index=True)
