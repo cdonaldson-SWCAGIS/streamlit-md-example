@@ -76,7 +76,7 @@ def build_grid_options(data_json):
                 "pagination": True,
                 "paginationAutoPageSize": True,
                 "columnDefs": [
-                    {"field": "callId", "checkboxSelection": True},
+                    {"field": "callId", "checkboxSelection": False},
                     {"field": "direction"},
                     {"field": "number", "minWidth": 150},
                     {"field": "duration", "valueFormatter": "x.toLocaleString() + 's'"},
